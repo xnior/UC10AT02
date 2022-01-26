@@ -1,0 +1,25 @@
+.campo-label {
+    padding: 0px;
+}
+
+#mainForm {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 30px 0px;
+}
+
+div {
+    width: 400px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    background-color: dimgray;
+}
+
+label {
+    font-size: 18px;
+    color: white;
+}

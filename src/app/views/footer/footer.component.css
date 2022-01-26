@@ -1,0 +1,43 @@
+.footer {
+    font-family: "Oxygen";
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border: none;
+    padding: 0 30px 0 30px;
+    height: 60px;
+    margin: 0;
+}
+
+input[type=text] {
+    width: 200px;
+}
+
+.button-standard {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    text-decoration: bold;
+    text-transform: uppercase;
+    font-style: bold;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.input-standard {
+    width: auto;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 5px 5px 5px 5px;
+    transition: width 0.4s;
+}

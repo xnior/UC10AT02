@@ -1,0 +1,20 @@
+<header>
+    <div class="container cabecalho" id="menu-paginas">
+        <span><a href="index.html"><img src="assets/img/logo.svg" class="logo" alt="Logo de Aplicação do Site"></a></span>
+        <nav class="menu" id="menu">
+
+            <a href="">Principal</a>
+            <a href="">Lançamentos</a>
+            <a href="">Destaques</a>
+
+            <a [routerLink]="['/seja-membro']" routerLinkActive="router-link-active" class="active">Seja Membro</a>
+            <a [routerLink]="['/login']" routerLinkActive="router-link-active" class="activeII">Login</a>
+
+        </nav>
+        <input type="checkbox" id="bt_menu">
+        <!-- <label for="bt_menu" onclick="mostrarMenu()">&#9776;</label> -->
+        <label for="bt_menu" id="barras">&#9776;</label>
+
+        <input class="menuBarras" id="procurarSite" type="text" name="procurar" placeholder="Procurar">
+    </div>
+</header>

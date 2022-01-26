@@ -1,0 +1,97 @@
+<section class="banner" id="banner">
+    <div class="col-xs-12 col-sm-12 progress-container">
+        <div class="progress progress-striped active" style="background-color: transparent;">
+            <div class="progress-bar progress-bar-success active" id="largura" style="width: 0%"></div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container">
+    <section>
+        <div class="row col-md-auto">
+            <div class="galeria">
+                <a href="#">
+                    <img src="assets/img/produtos/001.png" alt="Imagem 1">
+                </a>
+
+                <div class="desc">Imagem 01</div>
+            </div>
+
+            <div class=" galeria">
+                <a href="#">
+                    <img src="assets/img/produtos/002.png" alt="Imagem 2">
+                </a>
+                <div class="desc">Imagem 02</div>
+            </div>
+            <div class=" galeria">
+                <a href="#">
+                    <img src="assets/img/produtos/003.png" alt="Imagem 3">
+                </a>
+                <div class="desc">Imagem 03</div>
+            </div>
+
+            <div class=" galeria">
+                <a href="#">
+                    <img src="assets/img/produtos/004.png" alt="Imagem 4">
+                </a>
+                <div class="desc">Imagem 04</div>
+            </div>
+            <div class=" galeria">
+                <a href="#">
+                    <img src="assets/img/produtos/005.png" alt="Imagem 5">
+                </a>
+                <div class="desc">Imagem 05</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cabecalho-secoes">
+        <div class="row justify-content-md-center col-9">
+
+            <div class="cardnews col-4" *ngFor="let u of listaNoticias">
+                <div class="cardnews">
+                    <img [src]=u.imagem class="cardnews" />
+
+                </div>
+                <div class="cardnews">
+                    <h5 class="card-title">{{u.titulo}}</h5>
+                    <p class="card-text">
+                        {{u.desc}}
+                    </p>
+
+                    <a href="#!" class="btn btn-primary">Button</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div>
+            <aside>
+
+                <table class="table">
+
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Sobr.</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let c of listaClassif">
+                        <tr>
+                            <td scope="row">{{c.id}}</td>
+                            <td scope="row">{{c.nome}}</td>
+                            <td scope="row">{{c.sobrenome}}</td>
+                            <td scope="row">{{c.handle}}</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </aside>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,23 @@
+<section class="container">
+
+    <main id="mainForm">
+
+
+        <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+            <div class="campo-label">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Adicione seu e-mail nome@servidor.com.br" [(ngModel)]="loginModel.email">
+            </div>
+            <div class="campo-label">
+                <label for="senha">Senha: </label>
+                <input type="password" name="senha" id="senha" placeholder="Coloque sua senha!" [(ngModel)]="loginModel.password">
+
+            </div>
+            <div>
+                <input type="submit" id="botao-enviar" value="Fazer Login">
+            </div>
+
+
+        </form>
+    </main>
+</section>
