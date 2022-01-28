@@ -24,10 +24,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void { this.carregarNoticias(), this.carregarListaClasse() }  
 
-    carregarNoticias(){
-  this.noticiaService.getNoticias().subscribe((noticiasRecebidas: Noticia[]) => {
-  this.listaNoticias = noticiasRecebidas;
-  console.log(this.listaNoticias);
+      carregarNoticias(){
+        this.noticiaService.getNoticias().subscribe((noticiasRecebidas: Noticia[]) => {
+        this.listaNoticias = noticiasRecebidas;
+        console.log(this.listaNoticias);
   })
     }
 

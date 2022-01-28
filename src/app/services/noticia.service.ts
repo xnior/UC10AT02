@@ -14,7 +14,7 @@ export class NoticiaService {
 
   constructor(private httpCliente: HttpClient) { }
 
-  getNoticias(): Observable<Noticia[]>{
+  getNoticias(): Observable<any>{
     return this.httpCliente.get<Noticia[]>(this.url)
   }
 }
